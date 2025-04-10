@@ -1,0 +1,84 @@
+/* 전반적인 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0d1117; /* 다크 배경 */
+    color: #c9d1d9; /* 밝은 텍스트 */
+}
+
+/* 헤더 스타일 */
+header {
+    position: relative;
+    background-color: #161b22;
+    padding: 20px;
+    border-bottom: 2px solid #30363d;
+    text-align: center;
+}
+
+header h1 {
+    color: #58a6ff; /* 메인 색상 */
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* 검색 컨테이너 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.search-container form {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* 검색 입력창 */
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #0d1117;
+    border: 2px solid #30363d;
+    color: #c9d1d9;
+    font-size: 1.1em;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px #58a6ff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 10px #58a6ff;
+    outline: none;
+}
+
+/* 검색 버튼 */
+.search-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #161b22;
+    border: 2px solid #30363d;
+    color: #58a6ff;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.search-button:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+    box-shadow: 0 0 15px #58a6ff;
+}
+
+.search-button:active {
+    background-color: #1c91e0;
+    box-shadow: inset 0 0 20px #1c91e0;
+}
